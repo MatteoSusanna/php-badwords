@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0f0e17;
+    color: white;
+}
+
+.container-p{
+    width: 50vw;
+    padding: 20px;
+    border: 1px solid #ff8906;
+    font-size: 20px;
+    line-height: 35px;
+}
