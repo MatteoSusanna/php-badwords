@@ -6,9 +6,9 @@
 
     $testoStampato = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi pariatur laborum totam at. Cupiditate similique debitis qui, quaerat nobis laudantium iste architecto atque vitae ex doloremque aperiam labore provident mollitia distinctio quas aspernatur sunt obcaecati reprehenderit libero quae, adipisci sapiente velit. Aut repudiandae veritatis, qui tempore ullam porro nobis minus distinctio sint dolorem, in delectus et expedita. Repudiandae in nobis minus odit molestias placeat necessitatibus quo est optio accusantium, repellat omnis soluta, modi, distinctio obcaecati dolores ipsam adipisci doloremque earum! Ducimus soluta fugiat illum quae, rem perferendis, alias, officia voluptatum asperiores sunt eius iste impedit facere blanditiis enim vitae repellat.';
 
-    $testoCensurato = str_replace($parolaDaCensurare, '***', $testoStampato );
+    $testoCensurato = str_ireplace($parolaDaCensurare, '***', $testoStampato );
 
-    $lunghezza = strlen($parolaDaCensurare);
+    $lunghezza = strlen($testoCensurato);
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +25,7 @@
         <div class="container-p">
             <p><?php echo $testoCensurato; ?></p>
         </div>
-        <h2>Il numero di caratteri è <?php echo $lunghezza; ?></h2>
+        <h2>lunghezza testo è <?php echo $lunghezza; ?></h2>
     </div>
     
 </body>
